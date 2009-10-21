@@ -1,0 +1,11 @@
+--- origsrc/AppFactory/AppRun	2005-12-18 04:50:58.000000000 -0600
++++ src/AppFactory/AppRun	2009-10-20 21:29:25.266478100 -0500
+@@ -5,6 +5,8 @@ PROG=AppFactory
+ APP_DIR=`dirname $0`
+ APP_DIR=`cd "$APP_DIR";pwd`; export APP_DIR
+ 
++export PLATFORM="CYGWIN-ix86"
++
+ if [ "x$PLATFORM" = x ]; then
+   ARCH=`uname -m`
+   case $ARCH in
